@@ -876,7 +876,11 @@
     height: 30px;
     margin: 5px;
 }
-
+/* Animacion */
+.caja_texto:focus{
+    border-radius: 5px;
+    background-color: #16DB93;
+}
 .mensaje {
     height: 60px;
 }
