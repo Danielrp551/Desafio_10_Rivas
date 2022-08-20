@@ -648,6 +648,11 @@
     height: 100px;
     margin: 5px;
 }
+/* Animacion */
+.producto img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 
 .producto p {
     margin: 7px 0px;
@@ -660,7 +665,10 @@
     color: white;
     padding: 3px;
 }
-
+/* Animacion */
+.producto a:hover{
+    color: #048BA8;
+}
 /*-----------*/
 .section_2_2 {
     grid-area: section_2_2;
