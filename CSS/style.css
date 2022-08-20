@@ -1,0 +1,892 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Poiret+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* Inicio */
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: (5, 20vh);
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "header header header header"
+        "section_1 section_1 section_1 section_1"
+        "section_2 section_2 section_2 section_2"
+        "section_3 section_3 section_3 section_3"
+        "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+    padding: 5px;
+}
+
+.logo {
+    width: 75px;
+    height: 70px;
+    margin: 0px;
+    z-index: 5;
+}
+
+.lista_nav {
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_lista {
+    padding: 2px;
+}
+
+.item_nav {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 3px 0px;
+}
+
+/* --------------- */
+.section_1 {
+    grid-area: section_1;
+}
+
+.banner {
+    width: 100vw;
+    height: 200px;
+}
+
+.bloque_beneficio {
+    background-color: #cdd2d662;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.beneficios_imagen {
+    width: 300px;
+    height: 160px;
+    margin: 10px;
+}
+
+.texto_beneficios {
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: white;
+    text-align: justify;
+    width: 300px;
+    height: 140px;
+    padding: 5px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+/* -------- */
+.section_2 {
+    grid-area: section_2;
+}
+
+.bloque_datos {
+    margin: 10px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #CA054D;
+}
+
+.bloque_datos div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px black solid;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bloque_datos div img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Quienes somos */
+.bloque_quienes_somos {
+    height: 400px;
+    padding: 5px;
+    margin: 10px 0px;
+    background-color: #cdd2d662;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloque_link_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px black solid;
+    background-color: white;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.texto_quienes_somos {
+    width: 300px;
+    height: 115px;
+    margin: 5px 5px 10px 5px;
+    overflow: hidden;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.quienes_somos_imagen {
+    width: 300px;
+    height: 190px;
+    margin: 15px 0px;
+}
+
+.link_quienes_somos {
+    text-decoration: none;
+    color: white;
+    border: 1px #F21B3F solid;
+    padding: 5px;
+    background-color: black;
+}
+
+/* -------- */
+.section_3 {
+    grid-area: section_3;
+    background-color: aqua;
+}
+
+.bloque_productos {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+}
+
+.bloque_productos div {
+    display: flex;
+    margin: 5px 0px;
+    padding: 2px;
+}
+
+.bloque_productos div div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.bloque_productos div img {
+    width: 130px;
+    height: 110px;
+    margin: 5px 0px;
+}
+
+.bloque_productos div a {
+    margin: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: #16DB93;
+    color: white;
+}
+
+/* --------------- */
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+.bloque_footer {
+    align-items: center;
+    background-color: b;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque_footer div {
+    text-align: center;
+    color: white;
+    margin: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloque_lista_footer ul {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.bloque_lista_footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.link_volver_arriba {
+    border: 1px white solid;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos grandes (desktop) */
+@media(min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .lista_nav {
+        width: 100vh;
+    }
+
+    .item_nav {
+        font-size: 16px;
+    }
+
+    .bloque_beneficio {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .beneficios_imagen {
+        width: 500px;
+        height: 300px;
+
+    }
+
+    .texto_beneficios {
+        width: 500px;
+        height: 298px;
+    }
+
+    /*  */
+    .bloque_datos {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*  */
+    .bloque_quienes_somos {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 330px;
+    }
+
+    .bloque_link_texto {
+        height: 300px;
+        padding: 3px;
+    }
+
+    .texto_quienes_somos {
+        width: 480px;
+        height: 249px;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .quienes_somos_imagen {
+        width: 500px;
+        height: 300px;
+    }
+
+    .link_quienes_somos {
+        margin-top: 20px;
+    }
+
+    .bloque_productos {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .bloque_productos div div {
+        padding: 10px;
+        margin: 0px 50px;
+    }
+
+    /*  */
+    .bloque_lista_footer ul {
+        justify-content: center;
+    }
+
+    .bloque_lista_footer ul li a {
+        margin: 0px 10px;
+    }
+}
+
+
+/* Nosotros */
+
+.grid_container_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "header header header header"
+        "section_1_1 section_1_1 section_1_1 section_1_1"
+        "section_2_1 section_2_1 section_2_1 section_2_1"
+        "section_3_1 section_3_1 section_3_1 section_3_1"
+        "footer footer footer footer";
+}
+
+.section_1_1 {
+    grid-area: section_1_1;
+}
+
+.bloque_1_sobre_nosotros {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    background-color: #cdd2d662;
+    padding: 10px 0px;
+    margin: 20px 0px 5px 0px;
+}
+
+.bloque_1_texto_sobre_nosotros {
+    text-align: center;
+}
+
+.bloque_1_imagen_sobre_nosotros img {
+    width: 300px;
+    height: 200px;
+}
+
+.bloque_1_texto_sobre_nosotros p {
+    width: 250px;
+    height: 155px;
+    padding: 3px;
+    margin: 5px 0px 15px 0px;
+    border-radius: 5px;
+    text-align: justify;
+    overflow: hidden;
+    border: 1px black solid;
+    background-color: white;
+}
+
+/*--------*/
+.section_2_1 {
+    grid-area: section_2_1;
+}
+
+.bloque_2_sobre_nosotros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #cdd2d662;
+    padding: 10px 0px;
+    margin: 5px 0px;
+}
+
+.bloque_2_texto_sobre_nosotros {
+    text-align: center;
+}
+
+.bloque_2_texto_sobre_nosotros p {
+    width: 250px;
+    height: 155px;
+    padding: 3px;
+    margin: 5px 0px 15px 0px;
+    border-radius: 5px;
+    text-align: justify;
+    overflow: hidden;
+    border: 1px black solid;
+    background-color: white;
+}
+
+.bloque_2_imagen_sobre_nosotros img {
+    width: 300px;
+    height: 200px;
+}
+
+/*--------------*/
+.section_3_1 {
+    grid-area: section_3_1;
+}
+
+.bloque_3_sobre_nosotros {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF9914;
+    margin: 5px 0px;
+}
+
+.bloque_3_titulo_sobre_nosotros {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.bloque_3_fundadores {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bloque_3_fundador_sobre_nosotros {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 5px;
+    padding: 3px;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.bloque_3_fundador_sobre_nosotros img {
+    width: 100px;
+    height: 120px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos grandes (desktop) */
+@media(min-width: 1024px) {
+    .bloque_1_sobre_nosotros {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px 0px;
+    }
+
+    .bloque_1_texto_sobre_nosotros {
+        height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bloque_1_imagen_sobre_nosotros img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .bloque_1_texto_sobre_nosotros p {
+        width: 500px;
+        height: 200px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    /*  */
+    .bloque_2_sobre_nosotros {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px 0px;
+    }
+
+    .bloque_2_texto_sobre_nosotros {
+        height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bloque_2_texto_sobre_nosotros p {
+        width: 500px;
+        height: 200px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .bloque_2_imagen_sobre_nosotros img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .bloque_3_fundador_sobre_nosotros {
+        padding: 10px;
+    }
+
+    .bloque_3_fundador_sobre_nosotros img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/*Productos*/
+.grid_container_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "header header header header"
+        "section_1_2 section_1_2 section_1_2 section_1_2"
+        "section_2_2 section_2_2 section_2_2 section_2_2"
+        "footer footer footer footer";
+}
+
+.section_1_2 {
+    grid-area: section_1_2;
+}
+
+/* Bloque 1 */
+.bloque_0_productos {
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloque_1_productos {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 260px;
+    border: 1px black solid;
+    padding: 5px;
+    margin: 10px 0px;
+    background-color: #16DB93;
+}
+
+.bloque_1_productos h2 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dos_productos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.producto {
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 130px;
+    height: 200px;
+    padding: 5px;
+    margin: 10px 8px;
+    background-color: white;
+}
+
+.producto img {
+    width: 95px;
+    height: 100px;
+    margin: 5px;
+}
+
+.producto p {
+    margin: 7px 0px;
+}
+
+.producto a {
+    background-color: black;
+    text-decoration: none;
+    border: 2px #048BA8 solid;
+    color: white;
+    padding: 3px;
+}
+
+/*-----------*/
+.section_2_2 {
+    grid-area: section_2_2;
+}
+
+/* Bloque 2 */
+.bloque_2_productos {
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.bloque_2_productos h3 {
+    border: 2px black dashed;
+    font-family: 'Poiret One', cursive;
+    background-color: #FFF5B2;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos grandes (desktop) */
+@media(min-width: 1024px) {
+    .bloque_dos_tipos_productos {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .bloque_1_productos {
+        width: 500px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .bloque_1_productos h2 {
+        font-size: 26px;
+    }
+
+    .producto {
+        width: 200px;
+        height: 240px;
+    }
+
+    .producto img {
+        width: 150px;
+        height: 140px;
+    }
+
+    .producto p {
+        margin: 15px 0px;
+        font-size: 18px;
+    }
+
+    .bloque_2_productos h3 {
+        margin: 0px 15px 10px 15px;
+    }
+}
+
+/* Marcas */
+.grid_container_3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "header header header header"
+        "section_1_3 section_1_3 section_1_3 section_1_3"
+        "section_2_3 section_2_3 section_2_3 section_2_3"
+        "footer footer footer footer";
+}
+
+.section_1_3 {
+    grid-area: section_1_3;
+}
+
+/* Bloque marcas */
+.bloque_0_marcas {
+    text-align: center;
+    margin: 5px;
+}
+
+.bloque_0_marcas div h3 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloque_1_marcas div {
+    padding: 5px;
+    background-color: #41E2BA;
+}
+
+.bloque_1_marcas div img {
+    width: 130px;
+    height: 130px;
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*------------*/
+.section_2_3 {
+    grid-area: section_2_3;
+}
+
+/*Bloque reseñas*/
+
+.bloque_0_reseñas {
+    text-align: center;
+    margin: 10px;
+}
+
+.bloque_0_reseñas div h3 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bloque_1_reseñas div {
+    text-align: center;
+    background-color: #F7F7F9;
+}
+
+.bloque_1_reseñas div iframe {
+    width: 300px;
+    height: 200px;
+    margin: 5px 0px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos grandes (desktop) */
+@media(min-width: 1024px) {
+
+    /* Bloque marcas */
+    .bloque_1_marcas div img {
+        width: 240px;
+        height: 240px;
+    }
+
+    /*Bloque reseñas*/
+
+    .bloque_1_reseñas div iframe {
+        margin: 10px;
+    }
+}
+
+/* Contacto */
+
+/* Formulario */
+.grid_container_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "header header header header"
+        "section_1_4 section_1_4 section_1_4 section_1_4"
+        "section_2_4 section_2_4 section_2_4 section_2_4"
+        "footer footer footer footer";
+}
+
+.section_1_4 {
+    grid-area: section_1_4;
+}
+
+.bloque_0_formulario {
+    margin: 10px 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.bloque_0_formulario div h3 {
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.bloque_1_formulario {
+    border: 2px #16DB93 solid;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+}
+
+.boton {
+    border: 2px black solid;
+    padding: 5px;
+    background-color: #16DB93;
+    border-radius: 5px;
+    color: white;
+}
+
+.caja_texto {
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+}
+
+.mensaje {
+    height: 60px;
+}
+
+/*----------*/
+.section_2_4 {
+    grid-area: section_2_4;
+}
+
+/* Ubicacion */
+
+.bloque_0_ubicacion {
+    text-align: center;
+}
+
+.bloque_0_ubicacion div h3 {
+    margin: 10px;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.bloque_1_ubicacion {
+    border: 1px #CA054D solid;
+    border-radius: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.bloque_1_ubicacion iframe {
+    width: 290px;
+    height: 300px;
+}
+
+/* MediaQuerys */
+/* Estrategia : Mobile First */
+
+/* Dispositivos grandes (desktop) */
+@media(min-width: 1024px){
+    .bloque_0_formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .bloque_1_formulario {
+        width: 550px;    
+    }
+    
+    .caja_texto {
+        width: 490px;
+    }
+    
+    /* Ubicacion */
+    
+    .bloque_0_ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    
+    .bloque_1_ubicacion {
+        width: 550px;    
+    }
+    
+    .bloque_1_ubicacion iframe {
+        width: 490px;  
+        height: 350px; 
+    }
+}
