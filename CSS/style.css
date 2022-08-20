@@ -772,7 +772,11 @@
     border-radius: 10px;
     background-color: white;
 }
-
+/* Animacion */
+.bloque_1_marcas div img:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
 /*------------*/
 .section_2_3 {
     grid-area: section_2_3;
