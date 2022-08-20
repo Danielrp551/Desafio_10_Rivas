@@ -417,6 +417,11 @@
     width: 300px;
     height: 200px;
 }
+/* Animacion */
+.bloque_1_imagen_sobre_nosotros img:hover{
+    transform: scale(1.05);
+    transition: 3s;
+}
 
 .bloque_1_texto_sobre_nosotros p {
     width: 250px;
@@ -465,7 +470,11 @@
     width: 300px;
     height: 200px;
 }
-
+/* Animacion */
+.bloque_2_imagen_sobre_nosotros img:hover{
+    transform: scale(1.05);
+    transition: 3s;
+}
 /*--------------*/
 .section_3_1 {
     grid-area: section_3_1;
@@ -504,7 +513,11 @@
     width: 100px;
     height: 120px;
 }
-
+/* Animacion */
+.bloque_3_fundador_sobre_nosotros img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 /* MediaQuerys */
 /* Estrategia : Mobile First */
 
