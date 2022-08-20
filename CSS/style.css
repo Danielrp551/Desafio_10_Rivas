@@ -60,6 +60,10 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 3px 0px;
 }
+/* Animacion */
+.item_nav:hover {
+    color: #CA054D;
+}
 
 /* --------------- */
 .section_1 {
@@ -83,6 +87,11 @@
     width: 300px;
     height: 160px;
     margin: 10px;
+}
+/* Animacion */
+.beneficios_imagen:hover{
+    transform: scale(1.05);
+    transition: 3s;
 }
 
 .texto_beneficios {
@@ -125,6 +134,11 @@
     width: 120px;
     height: 120px;
 }
+/* Animacion */
+.bloque_datos div img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 
 /* Quienes somos */
 .bloque_quienes_somos {
@@ -163,6 +177,11 @@
     height: 190px;
     margin: 15px 0px;
 }
+/* Animacion */
+.quienes_somos_imagen:hover{
+    transform: scale(1.05);
+    transition: 3s;
+}
 
 .link_quienes_somos {
     text-decoration: none;
@@ -171,7 +190,10 @@
     padding: 5px;
     background-color: black;
 }
-
+/* Animacion */
+.link_quienes_somos:hover{
+    color: #CA054D;
+}
 /* -------- */
 .section_3 {
     grid-area: section_3;
@@ -206,7 +228,11 @@
     height: 110px;
     margin: 5px 0px;
 }
-
+/* Animacion */
+.bloque_productos div img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 .bloque_productos div a {
     margin: 5px;
     padding: 3px 0px;
@@ -216,7 +242,10 @@
     background-color: #16DB93;
     color: white;
 }
-
+/* Animacion */
+.bloque_productos div a:hover{
+    color: black;
+}
 /* --------------- */
 /* Footer */
 .footer {
@@ -256,7 +285,11 @@
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
-
+/* Animacion */
+.link_volver_arriba:hover{
+    color: #CA054D;
+    border-color: #CA054D;
+}
 /* MediaQuerys */
 /* Estrategia : Mobile First */
 
